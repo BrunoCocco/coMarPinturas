@@ -200,3 +200,41 @@ section {
     font-size: 1.8rem;
   }
 }
+
+
+.footer {
+  background: #000;
+  color: #fff;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.footer h5, .footer h6 {
+  color: #a32e3a; /* acento bordo */
+}
+
+.footer a.btn-bordo {
+  background: #a32e3a;
+  color: #fff;
+  border-radius: 6px;
+  padding: 10px 22px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.footer a.btn-bordo:hover {
+  background: #7a1f29;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+  text-decoration: none;
+}
+
+.footer i {
+  color: #a32e3a;
+  margin-right: 6px;
+}
+
+.footer iframe {
+  border-radius: 6px;
+  margin-top: 10px;
+}
