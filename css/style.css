@@ -5,6 +5,7 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
+  background: #f5f5f5;
 }
 
 /* Scroll suave */
@@ -19,13 +20,13 @@ html {
 }
 
 .navbar .nav-link {
-  color: #333;
+  color: #555;
   font-weight: 500;
   transition: color 0.3s;
 }
 
 .navbar .nav-link:hover {
-  color: #007bff; /* Azul principal */
+  color: #007bff;
 }
 
 .navbar-brand {
@@ -38,11 +39,12 @@ html {
 section {
   padding: 100px 20px;
   min-height: 100vh;
+  background: #fff; /* fondo blanco por defecto */
 }
 
-/* Hero con imagen de fondo */
+/* Hero */
 #hero {
-  background: url('tu-imagen-pintores.jpg') no-repeat center center/cover;
+  background: url('../images/avinash-kumar-qx5fMfa2o4A-unsplash.jpg') no-repeat center center/cover;
   min-height: 100vh;
   position: relative;
   display: flex;
@@ -50,7 +52,6 @@ section {
   color: #fff;
 }
 
-/* Overlay oscuro */
 #hero::before {
   content: "";
   position: absolute;
@@ -65,41 +66,137 @@ section {
 
 /* Botones */
 .btn-primary {
-  background: #007bff;
+  background: #c88013;
   border: none;
   padding: 12px 28px;
   border-radius: 8px;
   font-weight: 600;
-  transition: background 0.3s;
+  transition: all 0.3s;
 }
 
 .btn-primary:hover {
-  background: #0056b3;
+  background: #c38d21;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
 }
 
-/* Sección de servicios */
-#servicios h2, 
-#porque h2, 
-#portfolio h2, 
-#contacto h2 {
+/* Sección Servicios */
+#servicios h2 {
   font-weight: 700;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-#servicios p, 
-#porque p, 
-#portfolio p, 
-#contacto p {
-  max-width: 700px;
-  margin: 0 auto;
-  text-align: center;
-  color: #555;
-}
-
-/* Clase especial (ejemplo de branding) */
-.nikeName_fuon {
   color: #007bff;
-  font-size: 26px;
-  font-weight: 600;
+}
+
+.service-card {
+  background: #e0e0e0; /* gris claro */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.service-card .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background: #d0d0d0;
+}
+
+.service-card h5 {
+  color: #007bff;
+}
+
+.service-card p {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+/* Texto de compromiso dentro de servicios */
+#servicios .lead {
+  color: #555;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-top: 40px;
+}
+
+/* Sección completa ajustada */
+#porque {
+  background: #f0f0f0; /* gris medio */
+  padding-top: 60px;    /* menos espacio arriba */
+  padding-bottom: 60px; /* menos espacio abajo */
+  width: 100vw;          /* ocupa todo el ancho de la pantalla */
+  box-sizing: border-box;
+}
+
+/* Título */
+#porque h2 {
+  font-weight: 700;
+  color: #a32e3a; /* cambiamos a bordo claro para acento */
+  font-size: 2rem; /* un poco más compacto */
+  margin-bottom: 30px;
+}
+
+/* Beneficios */
+#porque .benefit {
+  margin-bottom: 20px; /* reducir espacio entre beneficios */
+}
+
+#porque .benefit h5 {
+  font-size: 1.05rem;
+  color: #a32e3a;
+  display: flex;
+  align-items: center;
+}
+
+#porque .benefit p {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  margin-left: 1.8rem; /* espacio icono-texto */
+}
+
+/* Imagen */
+.img-perfecta {
+  max-width: 90%;   /* ocupa casi toda la columna pero deja margen */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  display: block;
+  margin: 0 auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.img-perfecta:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.2);
+}
+
+/* Testimonio */
+#porque blockquote {
+  color: #333;
+  font-size: 1rem;  /* un poco más compacto */
+  font-style: italic;
+  border-left: 4px solid #a32e3a;
+  padding-left: 0.8rem;
+  margin-top: 1.5rem;
+}
+
+/* Ajustes responsive para pantallas de 1366px y menores */
+@media (max-width: 1366px) {
+  #porque .col-lg-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  #porque .benefit p {
+    font-size: 0.9rem;
+  }
+
+  #porque h2 {
+    font-size: 1.8rem;
+  }
 }
