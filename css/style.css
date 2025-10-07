@@ -1,11 +1,11 @@
 /* Tipografía global */
 body {
   font-family: 'Poppins', sans-serif;
-  color: #333;
+  color: #0D1B2A; /* texto principal azul marino */
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  background: #f5f5f5;
+  background: #F5F5F5; /* fondo blanco roto */
 }
 
 /* Scroll suave */
@@ -15,48 +15,48 @@ html {
 
 /* Navbar */
 .navbar {
-  background: #fff;
+  background: #0D1B2A; /* azul marino predominante */
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .navbar .nav-link {
-  color: #555;
+  color: #F5F5F5; /* contraste con azul marino */
   font-weight: 500;
   transition: color 0.3s;
 }
 
 .navbar .nav-link:hover {
-  color: #007bff;
+  color: #FFA347; /* naranja claro */
 }
 
 .navbar-brand {
   font-weight: 700;
   font-size: 1.2rem;
-  color: #007bff !important;
+  color: #FFA347 !important; /* naranja claro */
 }
 
 /* Secciones generales */
 section {
   padding: 100px 20px;
   min-height: 100vh;
-  background: #fff; /* fondo blanco por defecto */
+  background: #F5F5F5; /* blanco roto */
 }
 
 /* Hero */
 #hero {
-  background: url('../images/avinash-kumar-qx5fMfa2o4A-unsplash.jpg') no-repeat center center/cover;
+  background: url('../images/will-barrow-PuWc60CJjS0-unsplash.jpg') no-repeat center center/cover;
   min-height: 100vh;
   position: relative;
   display: flex;
   align-items: center;
-  color: #fff;
+  color: #F5F5F5;
 }
 
 #hero::before {
   content: "";
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0,0,0,0.5);
+  background: rgba(13,27,42,0.6); /* overlay azul marino */
 }
 
 #hero .container {
@@ -66,27 +66,28 @@ section {
 
 /* Botones */
 .btn-primary {
-  background: #c88013;
+  background: #FFA347; /* naranja claro */
   border: none;
   padding: 12px 28px;
   border-radius: 8px;
   font-weight: 600;
   transition: all 0.3s;
+  color: #0D1B2A; /* texto azul marino */
 }
 
 .btn-primary:hover {
-  background: #c38d21;
+  background: #FF9933; /* naranja un poco más oscuro */
   box-shadow: 0 6px 18px rgba(0,0,0,0.2);
 }
 
 /* Sección Servicios */
 #servicios h2 {
   font-weight: 700;
-  color: #007bff;
+  color: #0D1B2A; /* azul marino */
 }
 
 .service-card {
-  background: #e0e0e0; /* gris claro */
+  background: #FFFFFF; /* blanco sobre blanco roto */
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -103,65 +104,68 @@ section {
   height: 70px;
   margin: 0 auto;
   border-radius: 50%;
-  background: #d0d0d0;
+  background: #FFA347; /* naranja claro */
+  color: #0D1B2A; /* contraste azul marino */
+  font-size: 1.2rem;
 }
 
 .service-card h5 {
-  color: #007bff;
+  color: #0D1B2A;
 }
 
 .service-card p {
-  color: #555;
+  color: #333;
   font-size: 0.95rem;
 }
 
 /* Texto de compromiso dentro de servicios */
 #servicios .lead {
-  color: #555;
+  color: #333;
   font-size: 1.1rem;
   line-height: 1.6;
   margin-top: 40px;
 }
 
-/* Sección completa ajustada */
+/* Sección Porque */
 #porque {
-  background: #f0f0f0; /* gris medio */
-  padding-top: 60px;    /* menos espacio arriba */
-  padding-bottom: 60px; /* menos espacio abajo */
-  width: 100vw;          /* ocupa todo el ancho de la pantalla */
+  background: #0D1B2A; /* azul marino */
+  padding-top: 60px;
+  padding-bottom: 60px;
+  width: 100vw;
   box-sizing: border-box;
+  color: #F5F5F5; /* texto claro */
 }
 
 /* Título */
 #porque h2 {
   font-weight: 700;
-  color: #a32e3a; /* cambiamos a bordo claro para acento */
-  font-size: 2rem; /* un poco más compacto */
+  color: #FFA347; /* naranja claro */
+  font-size: 2rem;
   margin-bottom: 30px;
 }
 
 /* Beneficios */
 #porque .benefit {
-  margin-bottom: 20px; /* reducir espacio entre beneficios */
+  margin-bottom: 20px;
 }
 
 #porque .benefit h5 {
   font-size: 1.05rem;
-  color: #a32e3a;
+  color: #FFA347; /* naranja claro */
   display: flex;
   align-items: center;
 }
 
 #porque .benefit p {
-  color: #555;
+  color: #F5F5F5;
   font-size: 0.95rem;
   line-height: 1.4;
-  margin-left: 1.8rem; /* espacio icono-texto */
+  margin-left: 1.8rem;
 }
 
 /* Imagen */
 .img-perfecta {
-  max-width: 90%;   /* ocupa casi toda la columna pero deja margen */
+  max-width: 90%;
   height: auto;
   border-radius: 10px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.15);
@@ -177,15 +181,15 @@ section {
 
 /* Testimonio */
 #porque blockquote {
-  color: #333;
-  font-size: 1rem;  /* un poco más compacto */
+  color: #F5F5F5;
+  font-size: 1rem;
   font-style: italic;
-  border-left: 4px solid #a32e3a;
+  border-left: 4px solid #FFA347; /* naranja claro */
   padding-left: 0.8rem;
   margin-top: 1.5rem;
 }
 
-/* Ajustes responsive para pantallas de 1366px y menores */
+/* Ajustes responsive */
 @media (max-width: 1366px) {
   #porque .col-lg-6 {
     flex: 0 0 50%;
@@ -201,21 +205,21 @@ section {
   }
 }
 
-
+/* Footer */
 .footer {
-  background: #000;
-  color: #fff;
+  background: #0D1B2A; /* azul marino */
+  color: #F5F5F5;
   font-size: 0.95rem;
   line-height: 1.6;
 }
 
 .footer h5, .footer h6 {
-  color: #a32e3a; /* acento bordo */
+  color: #FFA347; /* naranja claro */
 }
 
 .footer a.btn-bordo {
-  background: #a32e3a;
-  color: #fff;
+  background: #FFA347; /* naranja claro */
+  color: #0D1B2A; /* contraste azul marino */
   border-radius: 6px;
   padding: 10px 22px;
   text-decoration: none;
@@ -224,13 +228,13 @@ section {
 }
 
 .footer a.btn-bordo:hover {
-  background: #7a1f29;
+  background: #FF9933;
   box-shadow: 0 6px 16px rgba(0,0,0,0.3);
   text-decoration: none;
 }
 
 .footer i {
-  color: #a32e3a;
+  color: #FFA347;
   margin-right: 6px;
 }
 
