@@ -1,53 +1,73 @@
-/* Tipografía global */
+/* =========================
+   VARIABLES GLOBALES
+   ========================= */
+:root {
+  --color-bg: #F4EDE4;       /* fondo base crema */
+  --color-primary: #B85C38;  /* terracota */
+  --color-secondary: #D9A066;/* ocre cálido */
+  --color-accent: #E5D3B3;   /* arena clara */
+  --color-dark: #3E2F2F;     /* marrón profundo */
+  --color-muted: #A89984;    /* gris piedra */
+}
+
+/* =========================
+   TIPOGRAFÍA GLOBAL
+   ========================= */
 body {
   font-family: 'Poppins', sans-serif;
-  color: #3E2F2F; /* marrón profundo */
+  color: var(--color-dark);
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  background: #F4EDE4; /* crema apagado */
+  background: var(--color-bg);
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-/* Navbar */
+/* =========================
+   NAVBAR
+   ========================= */
 .navbar {
-  background: #B85C38; /* terracota */
+  background: var(--color-primary);
   box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
 
 .navbar .nav-link {
-  color: #F4EDE4;
+  color: var(--color-bg);
   font-weight: 500;
   transition: color 0.3s;
 }
 
 .navbar .nav-link:hover {
-  color: #D9A066; /* ocre cálido */
+  color: var(--color-secondary);
 }
 
 .navbar-brand {
   font-weight: 700;
   font-size: 1.2rem;
-  color: #E5D3B3 !important; /* arena clara */
+  color: var(--color-accent) !important;
 }
 
-/* Secciones */
+/* =========================
+   SECCIONES
+   ========================= */
 section {
   padding: 100px 20px;
   min-height: 100vh;
-  background: #F4EDE4;
+  background: var(--color-bg);
 }
 
-/* Hero */
+/* =========================
+   HERO
+   ========================= */
 #hero {
   background: url('../images/will-barrow-PuWc60CJjS0-unsplash.jpg') no-repeat center center/cover;
   min-height: 100vh;
   display: flex;
   align-items: center;
-  color: #F4EDE4;
+  color: var(--color-bg);
   position: relative;
 }
 
@@ -63,31 +83,35 @@ section {
   z-index: 2;
 }
 
-/* Botones */
+/* =========================
+   BOTONES
+   ========================= */
 .btn-primary {
-  background: #D9A066; /* ocre cálido */
+  background: var(--color-secondary);
   border: none;
   padding: 12px 28px;
   border-radius: 8px;
   font-weight: 600;
   transition: all 0.3s;
-  color: #3E2F2F;
+  color: var(--color-dark);
 }
 
 .btn-primary:hover {
-  background: #B85C38; /* terracota */
-  color: #F4EDE4;
+  background: var(--color-primary);
+  color: var(--color-bg);
   box-shadow: 0 6px 16px rgba(0,0,0,0.2);
 }
 
-/* Servicios */
+/* =========================
+   SERVICIOS
+   ========================= */
 #servicios h2 {
   font-weight: 700;
-  color: #B85C38;
+  color: var(--color-primary);
 }
 
 .service-card {
-  background: #E5D3B3; /* arena clara */
+  background: var(--color-accent);
   border-radius: 8px;
   padding: 20px;
   transition: transform 0.3s, box-shadow 0.3s;
@@ -106,42 +130,44 @@ section {
   height: 70px;
   margin: 0 auto 10px;
   border-radius: 50%;
-  background: #B85C38;
-  color: #F4EDE4;
+  background: var(--color-primary);
+  color: var(--color-bg);
   font-size: 1.2rem;
 }
 
 .service-card h5 {
-  color: #3E2F2F;
+  color: var(--color-dark);
 }
 
 .service-card p {
-  color: #3E2F2F;
+  color: var(--color-dark);
   font-size: 0.95rem;
 }
 
 /* Texto de compromiso */
 #servicios .lead {
-  color: #3E2F2F;
+  color: var(--color-dark);
   font-size: 1.1rem;
   margin-top: 40px;
 }
 
-/* Por qué elegirnos */
+/* =========================
+   PORQUÉ ELEGIRNOS
+   ========================= */
 #porque {
-  background: #D9A066; /* ocre cálido */
+  background: var(--color-secondary);
   padding: 80px 20px;
-  color: #3E2F2F;
+  color: var(--color-dark);
 }
 
 #porque h2 {
   font-weight: 700;
-  color: #3E2F2F;
+  color: var(--color-dark);
   margin-bottom: 30px;
 }
 
 #porque .benefit h5 {
-  color: #B85C38;
+  color: var(--color-primary);
 }
 
 #porque .benefit p {
@@ -158,29 +184,33 @@ section {
   margin: 0 auto;
 }
 
-/* Nuestros trabajos */
+/* =========================
+   NUESTROS TRABAJOS
+   ========================= */
 #trabajos {
-  background: linear-gradient(135deg, #E5D3B3 0%, #A89984 100%);
+  background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-muted) 100%);
   padding: 80px 20px;
-  color: #3E2F2F;
+  color: var(--color-dark);
 }
 
-/* Footer */
+/* =========================
+   FOOTER
+   ========================= */
 .footer {
-  background: #3E2F2F; /* marrón profundo */
-  color: #F4EDE4;
+  background: var(--color-dark);
+  color: var(--color-bg);
   font-size: 0.95rem;
   line-height: 1.6;
   padding: 40px 20px;
 }
 
 .footer h5, .footer h6 {
-  color: #D9A066;
+  color: var(--color-secondary);
 }
 
 .footer a.btn-bordo {
-  background: #B85C38;
-  color: #F4EDE4;
+  background: var(--color-primary);
+  color: var(--color-bg);
   border-radius: 6px;
   padding: 10px 22px;
   text-decoration: none;
@@ -189,13 +219,13 @@ section {
 }
 
 .footer a.btn-bordo:hover {
-  background: #D9A066;
-  color: #3E2F2F;
+  background: var(--color-secondary);
+  color: var(--color-dark);
   box-shadow: 0 6px 16px rgba(0,0,0,0.3);
 }
 
 .footer i {
-  color: #B85C38;
+  color: var(--color-primary);
   margin-right: 6px;
 }
 
