@@ -233,3 +233,6 @@ section {
   border-radius: 6px;
   margin-top: 10px;
 }
+.color-terracota{
+  color: (--color-primary);
+}
