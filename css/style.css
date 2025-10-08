@@ -96,6 +96,12 @@ section {
   box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
 
+.color-fondo{
+  background-color: #403c7e;
+}
+.color-fuente{
+  color: #F5F5F5;
+}
 .service-card .icon {
   display: flex;
   justify-content: center;
