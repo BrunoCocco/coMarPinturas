@@ -1,62 +1,61 @@
 /* Tipografía global */
 body {
   font-family: 'Poppins', sans-serif;
-  color: #0D1B2A; /* texto principal azul marino */
+  color: #3E2F2F; /* marrón profundo */
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  background: #F5F5F5; /* fondo blanco roto */
+  background: #F4EDE4; /* crema apagado */
 }
 
-/* Scroll suave */
 html {
   scroll-behavior: smooth;
 }
 
 /* Navbar */
 .navbar {
-  background: #0D1B2A; /* azul marino predominante */
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  background: #B85C38; /* terracota */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
 
 .navbar .nav-link {
-  color: #F5F5F5; /* contraste con azul marino */
+  color: #F4EDE4;
   font-weight: 500;
   transition: color 0.3s;
 }
 
 .navbar .nav-link:hover {
-  color: #FFA347; /* naranja claro */
+  color: #D9A066; /* ocre cálido */
 }
 
 .navbar-brand {
   font-weight: 700;
   font-size: 1.2rem;
-  color: #FFA347 !important; /* naranja claro */
+  color: #E5D3B3 !important; /* arena clara */
 }
 
-/* Secciones generales */
+/* Secciones */
 section {
   padding: 100px 20px;
   min-height: 100vh;
-  background: #F5F5F5; /* blanco roto */
+  background: #F4EDE4;
 }
 
 /* Hero */
 #hero {
   background: url('../images/will-barrow-PuWc60CJjS0-unsplash.jpg') no-repeat center center/cover;
   min-height: 100vh;
-  position: relative;
   display: flex;
   align-items: center;
-  color: #F5F5F5;
+  color: #F4EDE4;
+  position: relative;
 }
 
 #hero::before {
   content: "";
   position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(13,27,42,0.6); /* overlay azul marino */
+  inset: 0;
+  background: rgba(184,92,56,0.55); /* overlay terracota */
 }
 
 #hero .container {
@@ -66,110 +65,90 @@ section {
 
 /* Botones */
 .btn-primary {
-  background: #FFA347; /* naranja claro */
+  background: #D9A066; /* ocre cálido */
   border: none;
   padding: 12px 28px;
   border-radius: 8px;
   font-weight: 600;
   transition: all 0.3s;
-  color: #0D1B2A; /* texto azul marino */
+  color: #3E2F2F;
 }
 
 .btn-primary:hover {
-  background: #FF9933; /* naranja un poco más oscuro */
-  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+  background: #B85C38; /* terracota */
+  color: #F4EDE4;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
 }
 
-/* Sección Servicios */
+/* Servicios */
 #servicios h2 {
   font-weight: 700;
-  color: #0D1B2A; /* azul marino */
+  color: #B85C38;
 }
 
 .service-card {
-  background: #FFFFFF; /* blanco sobre blanco roto */
+  background: #E5D3B3; /* arena clara */
+  border-radius: 8px;
+  padding: 20px;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .service-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 20px rgba(252, 250, 250, 0.874);
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
 
-.color-fondo{
-  background-color: #403c7e;
-}
-.color-fuente{
-  color: #F5F5F5;
-}
 .service-card .icon {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 70px;
   height: 70px;
-  margin: 0 auto;
+  margin: 0 auto 10px;
   border-radius: 50%;
-  background: #FFA347; /* naranja claro */
-  color: #0D1B2A; /* contraste azul marino */
+  background: #B85C38;
+  color: #F4EDE4;
   font-size: 1.2rem;
 }
 
 .service-card h5 {
-  color: #0D1B2A;
+  color: #3E2F2F;
 }
 
 .service-card p {
-  color: #333;
+  color: #3E2F2F;
   font-size: 0.95rem;
 }
 
-/* Texto de compromiso dentro de servicios */
+/* Texto de compromiso */
 #servicios .lead {
-  color: #333;
+  color: #3E2F2F;
   font-size: 1.1rem;
-  line-height: 1.6;
   margin-top: 40px;
 }
 
-/* Sección Porque */
+/* Por qué elegirnos */
 #porque {
-  background: #0D1B2A; /* azul marino */
-  padding-top: 60px;
-  padding-bottom: 60px;
-  width: 100vw;
-  box-sizing: border-box;
-  color: #F5F5F5; /* texto claro */
+  background: #D9A066; /* ocre cálido */
+  padding: 80px 20px;
+  color: #3E2F2F;
 }
 
-/* Título */
 #porque h2 {
   font-weight: 700;
-  color: #FFA347; /* naranja claro */
-  font-size: 2rem;
+  color: #3E2F2F;
   margin-bottom: 30px;
 }
 
-/* Beneficios */
-#porque .benefit {
-  margin-bottom: 20px;
-}
-
 #porque .benefit h5 {
-  font-size: 1.05rem;
-  color: #FFA347; /* naranja claro */
-  display: flex;
-  align-items: center;
+  color: #B85C38;
 }
 
 #porque .benefit p {
-  color: #F5F5F5;
   font-size: 0.95rem;
-  line-height: 1.4;
-  margin-left: 1.8rem;
+  margin-left: 1.5rem;
 }
 
-/* Imagen */
 .img-perfecta {
   max-width: 90%;
   height: auto;
@@ -177,55 +156,31 @@ section {
   box-shadow: 0 6px 18px rgba(0,0,0,0.15);
   display: block;
   margin: 0 auto;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.img-perfecta:hover {
-  transform: scale(1.02);
-  box-shadow: 0 10px 24px rgba(0,0,0,0.2);
-}
-
-/* Testimonio */
-#porque blockquote {
-  color: #F5F5F5;
-  font-size: 1rem;
-  font-style: italic;
-  border-left: 4px solid #FFA347; /* naranja claro */
-  padding-left: 0.8rem;
-  margin-top: 1.5rem;
-}
-
-/* Ajustes responsive */
-@media (max-width: 1366px) {
-  #porque .col-lg-6 {
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
-
-  #porque .benefit p {
-    font-size: 0.9rem;
-  }
-
-  #porque h2 {
-    font-size: 1.8rem;
-  }
+/* Nuestros trabajos */
+#trabajos {
+  background: linear-gradient(135deg, #E5D3B3 0%, #A89984 100%);
+  padding: 80px 20px;
+  color: #3E2F2F;
 }
 
 /* Footer */
 .footer {
-  background: #0D1B2A; /* azul marino */
-  color: #F5F5F5;
+  background: #3E2F2F; /* marrón profundo */
+  color: #F4EDE4;
   font-size: 0.95rem;
   line-height: 1.6;
+  padding: 40px 20px;
 }
 
 .footer h5, .footer h6 {
-  color: #FFA347; /* naranja claro */
+  color: #D9A066;
 }
 
 .footer a.btn-bordo {
-  background: #FFA347; /* naranja claro */
-  color: #0D1B2A; /* contraste azul marino */
+  background: #B85C38;
+  color: #F4EDE4;
   border-radius: 6px;
   padding: 10px 22px;
   text-decoration: none;
@@ -234,13 +189,13 @@ section {
 }
 
 .footer a.btn-bordo:hover {
-  background: #FF9933;
+  background: #D9A066;
+  color: #3E2F2F;
   box-shadow: 0 6px 16px rgba(0,0,0,0.3);
-  text-decoration: none;
 }
 
 .footer i {
-  color: #FFA347;
+  color: #B85C38;
   margin-right: 6px;
 }
 
